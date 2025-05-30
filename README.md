@@ -1,36 +1,74 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Sentisum Dashboard
+
+A unified insights dashboard built with Next.js, React, and Tailwind CSS.
+
+## Features
+
+- Metric cards for key KPIs
+- Interactive charts and tables
+- Responsive layout
+- Dark mode support
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
+
+- Node.js (v18 or higher recommended)
+- npm
+
+### Installation
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/dalroy44/sentisum-dashboard.git
+   cd sentisum-dashboard
+   ```
+
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
+
+3. Run the development server:
+   ```bash
+   npm run dev
+   ```
+
+4. Open [http://localhost:3000](http://localhost:3000) in your browser.
+
+### Build for Production
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+npm run build
+npm start
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Project Structure
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```
+src/
+  app/                # Next.js app directory
+  components/         # Reusable UI components
+  pages/              # (If used) Additional Next.js pages
+  Utils/              # Utility functions and helpers
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Deployment
 
-## Learn More
+This project can be deployed to Vercel, Netlify, or GitHub Pages.  
+For GitHub Pages, see the provided GitHub Actions workflow in `.github/workflows/`.
 
-To learn more about Next.js, take a look at the following resources:
+### Vercel Deployment
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+The project is currently deployed on [Vercel](https://sentisum-dashboard-five.vercel.app/).  
+To deploy your own version:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+1. Push your repository to GitHub.
+2. Go to [https://vercel.com/import](https://vercel.com/import) and import your repository.
+3. Follow the prompts to configure and deploy.
 
-## Deploy on Vercel
+Vercel will automatically build and deploy your project on every push to the main branch.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## License
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+MIT
